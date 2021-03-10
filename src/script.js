@@ -1,10 +1,9 @@
+import {toggleVinnytsia,toggleParis,toggleLondon,city} from "./toggle.js";
+import {printWeather} from "./print.js";
 
-let globalWeather;
-let convertedTemp;
-let isConverted = false;  // false = farengate, true = Celseum
-let city = 'Vinnytsia';
-
-
+export let globalWeather;
+export let convertedTemp;
+let isConverted = false;
 
 fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b124ec8d5546495f87d1cfc27038a5cc`)
     .then(weather => {
@@ -30,20 +29,7 @@ function toggleDiv() {
     printWeather();
 }
 
-
-function toggleLondon(){
-    city = 'London';
-    ChangeCity()
-}
-function toggleParis(){
-    city = 'Paris';
-    ChangeCity()
-}
-function toggleVinnytsia(){
-    city = 'Vinnytsia';
-    ChangeCity()
-}
-function ChangeCity(){
+export function ChangeCity(){
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=b124ec8d5546495f87d1cfc27038a5cc`)
         .then(weather => {
             return weather.json();
@@ -56,21 +42,6 @@ function ChangeCity(){
                 printWeather(weather);
             }
         )
-}
-
-function printWeather() {
-    let nameElement = document.getElementById('nameEl')
-    nameElement.innerText = globalWeather.name;
-
-    let humElement = document.getElementById('humEl')
-    humElement.innerText = globalWeather.main.humidity;
-
-    let timeElement = document.getElementById('timeEl')
-    timeElement.innerText = globalWeather.timezone;
-    //
-    let tempElement = document.getElementById('tempEl')
-    tempElement.innerText = convertedTemp;
-
 }
 
 import css from "./style.css";
