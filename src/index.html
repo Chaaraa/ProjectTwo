@@ -1,11 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href = "style.css">
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body{
+            background-image: url("https://wallpapers-fenix.eu/full/141216/192118231.jpg");
+        }
+    </style>
 </head>
 <body>
 
-<h1>Дратути</h1>
+<h1 class="weather"> Weather pages </h1>
+<h3 class="weatherTwo"> Weather for today is ... </h3>
+
+<div>
+<!--    <input type="text" name="city" placeholder="City"/>-->
+    <button id="buttonOne"> In Vinnytsia </button>
+    <button id="buttonTwo">In London</button>
+    <button id="buttonThree">In Paris</button>
+</div>
+
+<div class ="NameCity">
+    <span>name: </span>
+    <span id="nameEl">+25</span>
+</div>
+
+<button id="buttonFour">Change</button>
+
+<div class="temp">
+    <span>temp: </span>
+    <span id="tempEl">+5</span>
+</div>
+
+<div class="hum">
+    <span>humidity: </span>
+    <span id="humEl">+25</span>
+</div>
+
+<div class="time">
+    <span>timezone: </span>
+    <span id="timeEl">6000</span>
+</div>
+
 </body>
 </html>

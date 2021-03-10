@@ -1,0 +1,55 @@
+.weather{
+    color:white;
+}
+
+.weatherTwo{
+    color:#ffffff;
+    font: 175% serif;
+}
+
+.NameCity{
+    color:white;
+    font: 150% serif;
+}
+
+.temp{
+    color:white;
+    font: 150% serif;
+}
+
+.hum{
+    color:white;
+    font: 150% serif;
+}
+
+.time{
+    color:white;
+    font: 150% serif;
+}
+
+button{
+    width: 100px;
+    height: 27px;
+    /*font: 80% serif;*/
+    background:rgba(255,255,255,0.1);
+    color: white;
+    /*position: absolute;*/
+    /*top: 177px;*/
+    /*left:190px;*/
+}
+
+/*#buttonOne{*/
+/*    width: 150px;*/
+/*    height: 27px;*/
+/*    font: 80% serif;*/
+/*    background:rgba(255,255,255,0.1);*/
+/*    color: white;*/
+/*    position: absolute;*/
+/*    top: 150px;*/
+/*    left: 190px;*/
+/*}*/
+
+/*#buttonTwo{*/
+/*    top: 100px;*/
+/*    left: 350px;*/
+/*}*/
