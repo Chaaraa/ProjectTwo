@@ -39,6 +39,12 @@ button{
     /*left:190px;*/
 }
 
+.buttonFour{
+    left: 200px;
+    position: absolute;
+
+}
+
 /*#buttonOne{*/
 /*    width: 150px;*/
 /*    height: 27px;*/

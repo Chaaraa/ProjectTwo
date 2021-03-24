@@ -1,15 +1,15 @@
 import{ChangeCity} from "./script.js";
 
-export let city = 'Vinnytsia';  // false = farengate, true = Celseum
+export let city;  // false = farengate, true = Celseum
 export function toggleLondon(){
-    city = 'London';
+    city = 'london';
     ChangeCity()
 }
 export function toggleParis(){
-    city = 'Paris';
+    city = 'paris';
     ChangeCity()
 }
 export function toggleVinnytsia(){
-    city = 'Vinnytsia';
+    city = 'vinnytsia';
     ChangeCity()
 }

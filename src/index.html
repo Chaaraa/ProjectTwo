@@ -11,38 +11,15 @@
     </style>
 </head>
 <body>
-<script src = "script.js" type = "module"></script>
+
 <h1 class="weather"> Weather pages </h1>
 <h3 class="weatherTwo"> Weather for today is ... </h3>
 
 <div>
-<!--    <input type="text" name="city" placeholder="City"/>-->
-    <button id="buttonOne"> In Vinnytsia </button>
-    <button id="buttonTwo">In London</button>
-    <button id="buttonThree">In Paris</button>
+    <a href="vinnytsia.html"><button id="buttonOne"> In Vinnytsia </button></a>
+    <a href="london.html"><button id="buttonTwo" >In London</button></a>
+    <a href="paris.html"><button id ="buttonThree">In Paris</button></a>
 </div>
-
-<div class ="NameCity">
-    <span>name: </span>
-    <span id="nameEl">+25</span>
-</div>
-
-<button id="buttonFour">Change</button>
-
-<div class="temp">
-    <span>temp: </span>
-    <span id="tempEl">+5</span>
-</div>
-
-<div class="hum">
-    <span>humidity: </span>
-    <span id="humEl">+25</span>
-</div>
-
-<div class="time">
-    <span>timezone: </span>
-    <span id="timeEl">6000</span>
-</div>
-
+<script defer src = "script.js" type = "module"></script>
 </body>
 </html>
